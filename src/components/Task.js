@@ -31,7 +31,7 @@ export default function Task({ task: { id, title, state}, onArchiveTask, onPinTa
 
 Task.propTypes = {
   // composition of the task
-  task: PropTypes.shap({
+  task: PropTypes.shape({
     //ID of the task
     id: PropTypes.string.isRequired,
     //title of the task
